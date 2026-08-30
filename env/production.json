@@ -1,0 +1,4 @@
+{
+  "API_BASE_URL": "https://api.dinelify.example.com/api",
+  "ENV_NAME": "production"
+}
