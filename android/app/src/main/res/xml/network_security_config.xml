@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 9+ (API 28+) blocks plaintext HTTP by default. The production API
+  (env/production.json) is currently served over HTTP, not HTTPS, so this
+  scopes the cleartext exception to only that one host instead of disabling
+  cleartext protection for the whole app (no blanket usesCleartextTraffic).
+
+  Once the backend serves HTTPS, delete this file and the
+  android:networkSecurityConfig attribute in AndroidManifest.xml, and switch
+  API_BASE_URL in env/*.json to https://.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">34.227.59.228</domain>
+    </domain-config>
+</network-security-config>
