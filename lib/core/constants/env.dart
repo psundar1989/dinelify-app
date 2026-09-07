@@ -15,7 +15,8 @@ class Env {
   /// `API_BASE_URL` explicitly, so this default never applies to them.
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: kIsWeb ? 'http://localhost:8000/api' : 'http://10.0.2.2:8000/api',
+    defaultValue: kIsWeb ? 'http://34.227.59.228/api' : 'http://34.227.59.228/api',
+    // defaultValue: kIsWeb ? 'http://127.0.0.1:8000/api' : 'http://127.0.0.1:8000/api',
   );
 
   static const String name = String.fromEnvironment(
